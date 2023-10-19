@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Rezervasyon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h3>Vizyondaki Filmler</h3>
+      <h2 class="baslik"><img src="images/js.webp" alt="" style="width: 50px;">Film Rezervasyon</h2>
+      <h3>Gelecek Filmler</h3>
+    </header>
+    <div class="main">
+      <div class="aside overflow-y-scroll">
+        <img src="/images/bursa-bulbul.jpg" alt="" class="poster" />
+        <img src="/images/cehennem-melekleri-4.jpg" alt="" class="poster" />
+        <img src="/images/durdurulamaz.jpg" alt="" class="poster" />
+      </div>
+      <div class="middle">
+        <div class="head">
+          <div class="movie-list">
+            <select id="movie">
+              <option disabled selected>Film Seçiniz</option>
+              <option value="200">Bursa Bübülü (200 &#8378)</option>
+              <option value="240">Cehennem Melekleri-4 (240 &#8378)</option>
+              <option value="220">Durdurulamaz (220 &#8378)</option>
+            </select>
+          </div>
+          <p class="infoText">
+            Seçilen <span id="count">1</span> koltuk için toplam:
+            <span id="totalPrice">200</span> &#8378
+          </p>
+          <ul class="info">
+            <li>
+              <div class="seat selected"><i class="fas fa-couch"></i></div>
+              <span>Seçili</span>
+            </li>
+            <li>
+              <div class="seat reserved"><i class="fas fa-couch"></i></div>
+              <span>Rezerve</span>
+            </li>
+            <li>
+              <div class="seat"><i class="fas fa-couch"></i></div>
+              <span>Boş</span>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="seatRow">
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+          </div>
+          <div class="seatRow">
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+          </div>
+          <div class="seatRow">
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat reserved"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat reserved"><i class="fas fa-couch"></i></div>
+            <div class="seat reserved"><i class="fas fa-couch"></i></div>
+            <div class="seat reserved"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+          </div>
+          <div class="seatRow">
+            <div class="seat reserved"><i class="fas fa-couch"></i></div>
+            <div class="seat reserved"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat reserved"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+          </div>
+          <div class="seatRow">
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat reserved"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat reserved"><i class="fas fa-couch"></i></div>
+            <div class="seat reserved"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+            <div class="seat"><i class="fas fa-couch"></i></div>
+          </div>
+          <div class="screen">
+            <p class="screen-p">PERDE</p>
+            <img src="/images/perde.png" alt="PerdeResmi" />
+          </div>
+        </div>
+      </div>
+      <div class="aside overflow-y-scroll">
+        <img src="/images/sercenin-gozyasi.jpg" alt="" class="poster" />
+        <img src="/images/le-livre.jpg" alt="" class="poster" />
+        <img src="/images/her-seye-ragmen.jfif" alt="" class="poster" />
+        <img src="/images/ogretmen.jpg" alt="" class="poster" />
+        <img src="/images/killers-of.jpg" alt="" class="poster" />
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
